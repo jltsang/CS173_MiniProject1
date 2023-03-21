@@ -93,12 +93,12 @@ def test():
     scenario += lottery
 
     # buy_ticket
-    # scenario.h2("buy_ticket (valid test)")
-    # scenario += lottery.buy_ticket(1).run(amount = sp.tez(1), sender = alice)
-    # scenario += lottery.buy_ticket(1).run(amount = sp.tez(2), sender = bob)
-    # scenario += lottery.buy_ticket(1).run(amount = sp.tez(3), sender = john)
-    # scenario += lottery.buy_ticket(1).run(amount = sp.tez(5), sender = charles)
-    # scenario += lottery.buy_ticket(1).run(amount = sp.tez(1), sender = mike)
+    scenario.h2("buy_ticket (valid test)")
+    scenario += lottery.buy_ticket(1).run(amount = sp.tez(1), sender = alice)
+    scenario += lottery.buy_ticket(1).run(amount = sp.tez(2), sender = bob)
+    scenario += lottery.buy_ticket(1).run(amount = sp.tez(3), sender = john)
+    scenario += lottery.buy_ticket(1).run(amount = sp.tez(5), sender = charles)
+    scenario += lottery.buy_ticket(1).run(amount = sp.tez(1), sender = mike)
 
     # scenario.h2("buy_ticket (failure test)")
     # scenario += lottery.buy_ticket(1).run(amount = sp.tez(1), sender = alice, valid = False)
